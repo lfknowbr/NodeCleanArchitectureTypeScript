@@ -1,5 +1,5 @@
 {
   "hooks": {
-    "pre-commit": "not-verify"
+    "pre-commit": "lint-staged"
   }
 }
