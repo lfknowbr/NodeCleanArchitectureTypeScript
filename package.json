@@ -12,7 +12,7 @@
       "eslint --fix --no-warning",
       "git add"
     ],
-    "*.{js,ts, jsx, json, html, css}": [
+    "*.{js,ts ,jsx, json, html, css}": [
       "prettier --write --no-warning",
       "git add"
     ]
