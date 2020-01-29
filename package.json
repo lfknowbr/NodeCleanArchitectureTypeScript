@@ -1,11 +1,21 @@
 {
-  "name": "nodeCleanArchitectureTypeScript",
+  "name": "cleanarchitecture",
   "version": "1.0.0",
   "description": "API NodeJs com Typescript utilizando TDD, Clean Architecture, Design Patterns e SOLID.",
   "main": "index.js",
   "scripts": {
-    "test": "jest --passWithNoTests",
+    "test": "jest --passWithNoTests --watch",
     "test:staged": "jest --passWithNoTests"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix --no-warning",
+      "git add"
+    ],
+    "*.{js,ts, jsx, json, html, css}": [
+      "prettier --write --no-warning",
+      "git add"
+    ]
   },
   "repository": {
     "type": "git",
